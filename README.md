@@ -4,7 +4,7 @@ A modern, responsive one-page marketing website for a fictional software license
 
 ## 🌐 Live URL
 
-[[Coming Soon - Add Vercel or Netlify link here]](https://license-sell-launch.vercel.app/)
+[[View Live]](https://license-sell-launch.vercel.app/)
 
 ---
 
