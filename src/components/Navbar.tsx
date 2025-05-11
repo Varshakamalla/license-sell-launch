@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-slate-100">
+    <header className="sticky top-0 z-50 w-full bg-white/95 dark:bg-softsell-dark/95 backdrop-blur-sm border-b border-slate-100 dark:border-slate-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
@@ -28,26 +29,28 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#how-it-works" className="text-softsell-dark hover:text-softsell-blue transition-colors">
+            <a href="#how-it-works" className="text-softsell-dark dark:text-white hover:text-softsell-blue transition-colors">
               How It Works
             </a>
-            <a href="#why-choose-us" className="text-softsell-dark hover:text-softsell-blue transition-colors">
+            <a href="#why-choose-us" className="text-softsell-dark dark:text-white hover:text-softsell-blue transition-colors">
               Why Choose Us
             </a>
-            <a href="#testimonials" className="text-softsell-dark hover:text-softsell-blue transition-colors">
+            <a href="#testimonials" className="text-softsell-dark dark:text-white hover:text-softsell-blue transition-colors">
               Testimonials
             </a>
-            <a href="#contact" className="text-softsell-dark hover:text-softsell-blue transition-colors">
+            <a href="#contact" className="text-softsell-dark dark:text-white hover:text-softsell-blue transition-colors">
               Contact
             </a>
+            <ThemeToggle />
             <Button className="bg-softsell-blue hover:bg-blue-700 text-white">Get Started</Button>
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-3">
+            <ThemeToggle />
             <button
               onClick={toggleMenu}
-              className="p-2 text-softsell-dark hover:text-softsell-blue"
+              className="p-2 text-softsell-dark dark:text-white hover:text-softsell-blue"
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,32 +60,32 @@ const Navbar = () => {
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-100">
+          <div className="md:hidden py-4 border-t border-slate-100 dark:border-slate-800">
             <nav className="flex flex-col space-y-4">
               <a 
                 href="#how-it-works" 
-                className="text-softsell-dark hover:text-softsell-blue py-2"
+                className="text-softsell-dark dark:text-white hover:text-softsell-blue py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
               </a>
               <a 
                 href="#why-choose-us" 
-                className="text-softsell-dark hover:text-softsell-blue py-2"
+                className="text-softsell-dark dark:text-white hover:text-softsell-blue py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Why Choose Us
               </a>
               <a 
                 href="#testimonials" 
-                className="text-softsell-dark hover:text-softsell-blue py-2"
+                className="text-softsell-dark dark:text-white hover:text-softsell-blue py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
               </a>
               <a 
                 href="#contact" 
-                className="text-softsell-dark hover:text-softsell-blue py-2"
+                className="text-softsell-dark dark:text-white hover:text-softsell-blue py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
