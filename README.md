@@ -1,71 +1,40 @@
-# Welcome to your Lovable project
+# 🚀 SoftSell - Software License Resale Landing Page
 
-## Project info
+A modern, responsive one-page marketing website for a fictional software license resale startup built with **Next.js** and **Tailwind CSS**.
 
-## How can I edit this code?
+## 🌐 Live URL
 
-There are several ways of editing your application.
+[Coming Soon - Add Vercel or Netlify link here]
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fb6eff1a-c4f2-425c-9566-2ee4e0967953) and start prompting.
+## 📌 Features Implemented
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✅ Hero section with headline, subheading, and CTA button
+- ✅ “How It Works” section with icons and 3 steps
+- ✅ “Why Choose Us” feature highlights with icons
+- ✅ 2 dummy customer testimonials
+- ✅ Fully responsive contact form with frontend validation
+- ✅ Mobile-first, modern UI design using Tailwind CSS
+- ✅ Clean, modular React component structure
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Design Choices
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Color Palette**: Blue and indigo gradients for a clean, trustworthy aesthetic.
+- **Font**: Sans-serif font (`Inter`) for professional readability.
+- **Responsiveness**: Flex and grid layout with mobile-first Tailwind classes.
+- **Icons**: `react-icons` used for clarity and consistent visual storytelling.
+- **Form Validation**: Basic HTML5 validation (required fields, email types, etc.).
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠 Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Hosting**: Vercel / Netlify (choose based on deployment)
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fb6eff1a-c4f2-425c-9566-2ee4e0967953) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
