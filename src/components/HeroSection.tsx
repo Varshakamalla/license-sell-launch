@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { MicrosoftIcon, AdobeIcon, OracleIcon, SalesforceIcon, AtlassianIcon } from "lucide-react";
+import { MicrosoftLogo, AdobeLogo, OracleLogo, SalesforceLogo, AtlassianLogo } from "@/components/BrandLogos";
 
 const HeroSection = () => {
   return (
@@ -76,23 +76,23 @@ const HeroSection = () => {
         
         <div className="mt-24 flex flex-wrap justify-center gap-x-12 gap-y-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
-            <MicrosoftIcon className="h-10 w-auto" />
+            <MicrosoftLogo />
             <span className="ml-2 font-semibold">Microsoft</span>
           </div>
           <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
-            <AdobeIcon className="h-10 w-auto" />
+            <AdobeLogo />
             <span className="ml-2 font-semibold">Adobe</span>
           </div>
           <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
-            <OracleIcon className="h-10 w-auto" />
+            <OracleLogo />
             <span className="ml-2 font-semibold">Oracle</span>
           </div>
           <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
-            <SalesforceIcon className="h-10 w-auto" />
+            <SalesforceLogo />
             <span className="ml-2 font-semibold">Salesforce</span>
           </div>
           <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
-            <AtlassianIcon className="h-10 w-auto" />
+            <AtlassianLogo />
             <span className="ml-2 font-semibold">Atlassian</span>
           </div>
         </div>
