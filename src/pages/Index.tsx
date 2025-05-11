@@ -25,7 +25,8 @@ const Index = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fade-in');
-          entry.target.style.opacity = '1';
+          // Fix the TypeScript error by using setAttribute instead of direct style assignment
+          entry.target.setAttribute('style', 'opacity: 1');
           observer.unobserve(entry.target);
         }
       });

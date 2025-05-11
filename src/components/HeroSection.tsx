@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { MicrosoftIcon, AdobeIcon, OracleIcon, SalesforceIcon, AtlassianIcon } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -36,7 +37,7 @@ const HeroSection = () => {
               <div className="absolute -top-10 -left-10 w-32 h-32 bg-softsell-orange/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-10 -right-12 w-40 h-40 bg-softsell-purple/20 rounded-full blur-xl"></div>
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=90"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=90"
                 alt="Software License Management" 
                 className="w-full rounded-2xl shadow-2xl z-10 relative"
               />
@@ -74,11 +75,26 @@ const HeroSection = () => {
         </div>
         
         <div className="mt-24 flex flex-wrap justify-center gap-x-12 gap-y-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.7s' }}>
-          <img src="https://via.placeholder.com/160x50?text=Microsoft" alt="Microsoft" className="h-10 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="https://via.placeholder.com/160x50?text=Adobe" alt="Adobe" className="h-10 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="https://via.placeholder.com/160x50?text=Oracle" alt="Oracle" className="h-10 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="https://via.placeholder.com/160x50?text=Salesforce" alt="Salesforce" className="h-10 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="https://via.placeholder.com/160x50?text=Atlassian" alt="Atlassian" className="h-10 opacity-60 hover:opacity-100 transition-opacity" />
+          <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
+            <MicrosoftIcon className="h-10 w-auto" />
+            <span className="ml-2 font-semibold">Microsoft</span>
+          </div>
+          <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
+            <AdobeIcon className="h-10 w-auto" />
+            <span className="ml-2 font-semibold">Adobe</span>
+          </div>
+          <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
+            <OracleIcon className="h-10 w-auto" />
+            <span className="ml-2 font-semibold">Oracle</span>
+          </div>
+          <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
+            <SalesforceIcon className="h-10 w-auto" />
+            <span className="ml-2 font-semibold">Salesforce</span>
+          </div>
+          <div className="flex items-center opacity-60 hover:opacity-100 transition-opacity h-10">
+            <AtlassianIcon className="h-10 w-auto" />
+            <span className="ml-2 font-semibold">Atlassian</span>
+          </div>
         </div>
       </div>
     </section>
